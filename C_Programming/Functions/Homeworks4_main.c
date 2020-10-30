@@ -12,7 +12,13 @@ void main()
 {
 	int num1;
 	int num2;
-	prime(num1,num2);
+	int result;
+	//prime(num1,num2);   // EX1
+	//EX2//
+	scanf("%d",&num1);
+	result = factorial(num1);
+	printf("Factorial of %d is %d",num1 , result);
+	//////
 
 }
 
