@@ -1,5 +1,6 @@
-#include "uart.h"
 #include "platform.h"
+#include "uart.h"
+
 
 
 // Define the Base Address of UART0DR
