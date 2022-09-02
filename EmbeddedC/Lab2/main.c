@@ -25,8 +25,8 @@ volatile R_ODR_t* R_ODR = (volatile R_ODR_t *)(GPIO_Port_A+0x0c);
 int main(void)
 {
 	APB2ENR |= RCC_IOPAEN;
-	CRH &= FF0FFFFF;  //Saving the Bit Values By & then |
-	CRH |= 00200000;
+	CRH &= 0xFF0FFFFF;  //Saving the Bit Values By & then |
+	CRH |= 0x00200000;
 	while(1)
 	{
 		R_ODR->Pin.P_13 = 1;
